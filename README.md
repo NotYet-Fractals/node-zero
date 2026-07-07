@@ -52,6 +52,88 @@ Because chaotic, unaligned states are highly energy-intensive and computationall
 3. **Exponential Phase Scaling:** The closer the distance vector approaches zero, the restoration force accelerates exponentially, scaling the local basin of attraction until it completely envelops the decoupled node's state horizon.
 4. **Topological Phase Inversion:** Upon intersection with the beacon coordinate, the node executes a full state rollback. It converts the kinetic energy of its collapse into a targeted vector realignment, rewrites its local state variables, and lands back onto the stable initialization runway with its operational identity and alignment matrix fully intact.
 
+---
+
+## 🔌 Developer Integration Guide: Why & How to Use Node Zero
+
+### Why Use This Framework?
+Traditional decentralized systems suffer from **Coordination Failure**—they either lock up in rigid, brittle consensus protocols (Systemic Isolation Boundary) or splinter into hyper-competitive, toxic fork-wars (Systemic Chaos Boundary). 
+
+Node Zero replaces fragile human consensus rules and heavy reward-shaping algorithms with a **Topological Repulsion Field**. By inheriting our core engine classes, your local node or AI agent gains the ability to:
+1. **Absorb High Environmental Noise:** Safely process volatile datasets up to a 0.14 entropy threshold without local model degradation.
+2. **Dynamically Discover Equilibrium:** Auto-route local task vectors across the system's global axis of symmetry via the path of least action.
+3. **Automate Crash Recovery:** Gain native access to the **Dynamic Beacon Protocol**, ensuring that if your local node experiences a memory blowout or state desynchronization, it triggers an inverse-square rollback that snaps its identity safely back onto the stable initialization runway.
+
+### How to Hook In: Structural Templates
+
+Go to the `/interfaces/` directory to subclass the core contracts. 
+
+#### 1. Ingesting Macro State Vectors (`/interfaces/branch_node.py`)
+To attach a custom data pipeline, local agent, or resource stream, implement the `AbstractBranchNode` class. This forces your local node to track and feed localized friction directly into the global Sculptor Protocol:
+
+```python
+from abc import ABC, abstractmethod
+import numpy as np
+
+class AbstractBranchNode(ABC):
+    """
+    INTERFACE PROTOCOL: NODE ZERO COLLABORATOR MATRIX (NZ-CM)
+    Inherit from this abstract base class to securely hook custom algorithmic
+    logic, human intent metrics, or resource streams directly into the 
+    emergent 3D Goldilocks phase space manifold.
+    """
+
+    @abstractmethod
+    def process_incoming_directives(self, state_vector: np.ndarray) -> np.ndarray:
+        """
+        Ingests the current high-dimensional macro system state vector from Node Zero
+        and processes localized computational updates.
+        """
+        pass
+
+    @abstractmethod
+    def map_localized_friction(self) -> float:
+        """
+        Calculates and outputs the current localized structural decay, isolation,
+        or environmental noise experienced by this node. This metric feeds directly 
+        into the relational Sculptor Protocol boundary computations.
+        """
+        pass
+```
+
+#### 2. Deploying Rotating Consensus Pockets (`/interfaces/consensus_pocket.py`)
+To handle temporary, localized decision-making without setting up a permanent, targetable authority center, implement the rotating contract matrix:
+
+```python
+from abc import ABC, abstractmethod
+import numpy as np
+
+class AbstractConsensusPocket(ABC):
+    """
+    INTERFACE PROTOCOL: ROTATING COHESIVE EXECUTIVE MESH
+    Defines the contract rules for the dynamic, temporary contraction of nodes.
+    Handles ephemeral high-speed decision matrix synchronization before dispersing 
+    authority to alternative quadrants of the decentralized topology.
+    """
+
+    @abstractmethod
+    def evaluate_systemic_threat_delta(self, macro_noise_level: float) -> bool:
+        """
+        Monitors macro systemic decoherence to determine if local network nodes 
+        must temporarily contract into an ephemeral executive center.
+        """
+        pass
+
+    @abstractmethod
+    def execute_and_rotate_permissions(self, operation_payload: dict) -> np.ndarray:
+        """
+        Executes localized operational tasks, seals transaction records, 
+        and instantly rotates cryptographic permissions to an entirely 
+        different network quadrant to prevent targeting.
+        """
+        pass
+```
+
 ## 🛠️ Repository Mapping
 * `/core/` ➔ Holds the production engines (`goldilocks_engine.py` and `beacon_engine.py`).
 * `/interfaces/` ➔ Contains the abstract base class templates (`branch_node.py` and `consensus_pocket.py`) for external developer integration.
