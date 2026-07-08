@@ -1,6 +1,6 @@
 # Node Zero (NZ-0)
 
-**A topological framework for self-correcting systems that naturally move toward lower friction and coherence.**
+**A topological framework for self-correcting systems that naturally move toward lower friction and coherence.** 
 
 Most decentralized and multi-agent systems struggle with coordination failure as they scale. When individual components accumulate too much internal friction or noise, they can drift into decoherent or unstable states. Traditional approaches try to solve this with heavier rules, reward shaping, or constant oversight — which often adds more fragility.
 
